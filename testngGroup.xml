@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="Regression"></include>
+		</run>
+	</groups>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.TestNG.Practice.TestNG_Group_exe">
+      <methods>
+		  <include name="method1"></include>
+	  </methods>
+      </class>
+      <class name="com.TestNG.Practice.NewTestPractice">
+      <methods>
+		  <include name="methodForTestNG2"></include>
+	  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
