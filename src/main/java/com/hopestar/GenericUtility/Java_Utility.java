@@ -13,7 +13,12 @@ public class Java_Utility {
 	public int randomNum() {
 		Random r = new Random();
 		int random=r.nextInt(500);
+		String sfdtring="sdfaf";
+		Character character='s';
+		
 		return random;
+		
+		
 	}
 
 	/**
@@ -32,7 +37,7 @@ public class Java_Utility {
 	 * @return
 	 */
 	public String getSystemDateInFormat() {
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy hh-MM-ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy hhh-MM-ss");
 		Date d = new Date();
 		String SystemDateInformat=sdf.format(d);
 		return SystemDateInformat;

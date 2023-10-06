@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Hopestar</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 16, 2023 02:11:20 pm</span></a>
+<a href="#"><span class="badge badge-primary">Sep 20, 2023 02:45:49 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,8 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -80,108 +79,104 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="skip" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">addPaymentsByAgentsID</p>
             <p class="text-sm">
-              <span>2:11:24 pm</span> / <span>00:00:11:691</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>2:45:50 pm</span> / <span>00:00:00:006</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">addPaymentsByAgentsID</h5>
-<span class='badge badge-success'>08.16.2023 2:11:24 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:11:36 pm</span>
-<span class='badge badge-default'>00:00:11:691</span>
+<h5 class="test-status text-skip">addPaymentsByAgentsID</h5>
+<span class='badge badge-success'>09.20.2023 2:45:50 pm</span>
+<span class='badge badge-danger'>09.20.2023 2:45:50 pm</span>
+<span class='badge badge-default'>00:00:00:006</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Selenium_Project\com.Insurance\.\src\screenshot\fail.png' src="D:\Selenium_Project\com.Insurance\.\src\screenshot\fail.png">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:11:36 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:45:50 pm</td>
         <td>
-          addPaymentsByAgentsID---> Failed
+          addPaymentsByAgentsID---> Skipped
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:11:36 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>2:45:50 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[.='1692175037_2102055171']"}
-  (Session info: chrome=115.0.5790.171)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dc87a9305c411cb939f2a50641be59ad, findElement {using=xpath, value=//td[.='1692175037_2102055171']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\AYYAPP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62058/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dc87a9305c411cb939f2a50641be59ad
+          <textarea readonly class="code-block">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at com.hopestar.GenericUtility.DataBase_Utility.ConnectToDB(DataBase_Utility.java:22)
+	at com.hopestar.GenericUtility.BaseClass.openDBConnection(BaseClass.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.hopestar.Agents.System_Add_Payments_By_AgentsID_Test.addPaymentsByAgentsID(System_Add_Payments_By_AgentsID_Test.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 29 more
 </textarea>
           
         </td>
@@ -190,614 +185,6 @@ Session ID: dc87a9305c411cb939f2a50641be59ad
 </table>
 </div>
           </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">clientAdd</p>
-            <p class="text-sm">
-              <span>2:11:38 pm</span> / <span>00:00:01:974</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">clientAdd</h5>
-<span class='badge badge-success'>08.16.2023 2:11:38 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:11:40 pm</span>
-<span class='badge badge-default'>00:00:01:974</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:11:40 pm</td>
-        <td>
-          clientAdd---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">addNominee</p>
-            <p class="text-sm">
-              <span>2:11:41 pm</span> / <span>00:00:01:540</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">addNominee</h5>
-<span class='badge badge-success'>08.16.2023 2:11:41 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:11:43 pm</span>
-<span class='badge badge-default'>00:00:01:540</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:11:43 pm</td>
-        <td>
-          addNominee---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">clientstatus_From_Nominee_BySearch</p>
-            <p class="text-sm">
-              <span>2:11:44 pm</span> / <span>00:00:00:211</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">clientstatus_From_Nominee_BySearch</h5>
-<span class='badge badge-success'>08.16.2023 2:11:44 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:11:44 pm</span>
-<span class='badge badge-default'>00:00:00:211</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:11:44 pm</td>
-        <td>
-          clientstatus_From_Nominee_BySearch---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">findClient_Status_ByNominee</p>
-            <p class="text-sm">
-              <span>2:11:46 pm</span> / <span>00:00:00:304</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">findClient_Status_ByNominee</h5>
-<span class='badge badge-success'>08.16.2023 2:11:46 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:11:46 pm</span>
-<span class='badge badge-default'>00:00:00:304</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:11:46 pm</td>
-        <td>
-          findClient_Status_ByNominee---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">edit_Client_By_Nominee</p>
-            <p class="text-sm">
-              <span>2:11:48 pm</span> / <span>00:00:00:518</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">edit_Client_By_Nominee</h5>
-<span class='badge badge-success'>08.16.2023 2:11:48 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:11:48 pm</span>
-<span class='badge badge-default'>00:00:00:518</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:11:48 pm</td>
-        <td>
-          edit_Client_By_Nominee---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="7"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Payment_Add_EditByClient</p>
-            <p class="text-sm">
-              <span>2:11:50 pm</span> / <span>00:00:11:025</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">Payment_Add_EditByClient</h5>
-<span class='badge badge-success'>08.16.2023 2:11:50 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:12:01 pm</span>
-<span class='badge badge-default'>00:00:11:025</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Selenium_Project\com.Insurance\.\src\screenshot\fail.png' src="D:\Selenium_Project\com.Insurance\.\src\screenshot\fail.png">
-    
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:12:01 pm</td>
-        <td>
-          Payment_Add_EditByClient---> Failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:12:01 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table']/descendant::td[text()='1692175063_1718413738']"}
-  (Session info: chrome=115.0.5790.171)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [220bd4f21cd0bc24dcbcdcaeb1d87fad, findElement {using=xpath, value=//table[@class='table']/descendant::td[text()='1692175063_1718413738']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\AYYAPP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62200/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.hopestar.Payment.Integration_Payment_Add_EditByClient_Test.Payment_Add_EditByClient(Integration_Payment_Add_EditByClient_Test.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="8"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Payment_Add_EditByClient</p>
-            <p class="text-sm">
-              <span>2:12:01 pm</span> / <span>00:00:10:944</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">Payment_Add_EditByClient</h5>
-<span class='badge badge-success'>08.16.2023 2:12:01 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:12:12 pm</span>
-<span class='badge badge-default'>00:00:10:944</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Selenium_Project\com.Insurance\.\src\screenshot\fail.png' src="D:\Selenium_Project\com.Insurance\.\src\screenshot\fail.png">
-    
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:12:12 pm</td>
-        <td>
-          Payment_Add_EditByClient---> Failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:12:12 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table']/descendant::td[text()='1692175074_1345044235']"}
-  (Session info: chrome=115.0.5790.171)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [220bd4f21cd0bc24dcbcdcaeb1d87fad, findElement {using=xpath, value=//table[@class='table']/descendant::td[text()='1692175074_1345044235']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\AYYAPP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62200/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.hopestar.Payment.Integration_Payment_Add_EditByClient_Test.Payment_Add_EditByClient(Integration_Payment_Add_EditByClient_Test.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">m1</p>
-            <p class="text-sm">
-              <span>2:12:12 pm</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">m1</h5>
-<span class='badge badge-success'>08.16.2023 2:12:12 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:12:12 pm</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:12:12 pm</td>
-        <td>
-          m1---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">method1</p>
-            <p class="text-sm">
-              <span>2:12:12 pm</span> / <span>00:02:10:182</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">method1</h5>
-<span class='badge badge-success'>08.16.2023 2:12:12 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:14:22 pm</span>
-<span class='badge badge-default'>00:02:10:182</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:14:22 pm</td>
-        <td>
-          method1---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">method3</p>
-            <p class="text-sm">
-              <span>2:14:22 pm</span> / <span>00:00:11:369</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">method3</h5>
-<span class='badge badge-success'>08.16.2023 2:14:22 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:14:34 pm</span>
-<span class='badge badge-default'>00:00:11:369</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:14:34 pm</td>
-        <td>
-          method3---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="12"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">method99</p>
-            <p class="text-sm">
-              <span>2:14:34 pm</span> / <span>00:00:10:766</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">method99</h5>
-<span class='badge badge-success'>08.16.2023 2:14:34 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:14:45 pm</span>
-<span class='badge badge-default'>00:00:10:766</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:14:45 pm</td>
-        <td>
-          method99---> passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">method98</p>
-            <p class="text-sm">
-              <span>2:14:45 pm</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">method98</h5>
-<span class='badge badge-success'>08.16.2023 2:14:45 pm</span>
-<span class='badge badge-danger'>08.16.2023 2:14:45 pm</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
         </li>
       </ul>
     </div>
@@ -819,15 +206,15 @@ Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-skip'>1</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">com.mysql.cj.jdbc.exceptions.CommunicationsException</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<h4>com.mysql.cj.jdbc.exceptions.CommunicationsException</h4>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -838,25 +225,11 @@ Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:11:24 pm</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:45:50 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>addPaymentsByAgentsID</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:11:50 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>Payment_Add_EditByClient</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>14:12:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>Payment_Add_EditByClient</a>
 </td>
 </tr>
 </tbody>
@@ -876,25 +249,25 @@ Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 16, 2023 02:11:20 pm</h3>
+<h3>Sep 20, 2023 02:45:49 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 16, 2023 02:14:47 pm</h3>
+<h3>Sep 20, 2023 02:45:50 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>10</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -910,13 +283,13 @@ Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='76%'>
-<b>10</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='23%'><b>3</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -933,10 +306,10 @@ Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='60%'><b>9</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='40%'><b>6</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>2</b> others
 </small>
 </div>
 </div>
@@ -952,7 +325,7 @@ Session ID: 220bd4f21cd0bc24dcbcdcaeb1d87fad
 </div></div>
 <script>
 var timeline = {
-"addPaymentsByAgentsID":11.691,"clientAdd":1.974,"addNominee":1.54,"clientstatus_From_Nominee_BySearch":0.211,"findClient_Status_ByNominee":0.304,"edit_Client_By_Nominee":0.518,"Payment_Add_EditByClient":11.025,"Payment_Add_EditByClient":10.944,"m1":0,"method1":130.182,"method3":11.369,"method99":10.766,"method98":0
+"addPaymentsByAgentsID":0.006
 };
 </script>
 <div class="row">
@@ -987,10 +360,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 10,
-failParent: 3,
+passParent: 0,
+failParent: 0,
 warningParent: 0,
-skipParent: 0,
+skipParent: 1,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -1004,10 +377,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 9,
-failEvents: 6,
+passEvents: 0,
+failEvents: 0,
 warningEvents: 0,
-skipEvents: 0,
+skipEvents: 2,
 infoEvents: 0
 };
 </script>        </div>

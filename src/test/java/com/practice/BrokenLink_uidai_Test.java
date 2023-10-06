@@ -23,6 +23,8 @@ public class BrokenLink_uidai_Test {
 		driver.get("http://uidai.gov.in/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		List<WebElement> AllLinks = driver.findElements(By.xpath("//a"));
+		String s=AllLinks.getClass().getName();
+		System.out.println(s);
 		System.out.println(AllLinks.size());
 		ArrayList<String> linklist= new ArrayList<String>();
 		URL url = null;

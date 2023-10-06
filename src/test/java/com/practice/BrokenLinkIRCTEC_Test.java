@@ -39,9 +39,7 @@ public class BrokenLinkIRCTEC_Test {
 		  if(statusCode>=400) {
 			  flinks.add(eachLink+"---->"+statusCode);
 			  count++;
-		  }
-		  
-		  
+		  }  
 	  }
 	  catch (Exception e) {
 		  flinks.add(eachLink+"---->"+statusCode);

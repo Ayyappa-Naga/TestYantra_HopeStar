@@ -1,7 +1,9 @@
 package com.hopestar.Agents;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -18,10 +20,10 @@ public class System_Add_Payments_By_AgentsID_Test extends BaseClass {
 	Payments_Info_Page pf;
 	AddPayment_Page ap;
 	String TR_No;
-public String hh="fvds";
+public String hhh="fvds";
 	@Test(groups = "system")
 	public void addPaymentsByAgentsID() throws Throwable {
-		String he="gfud";
+		
 		WebElement element;
 		try {
 
@@ -43,7 +45,7 @@ public String hh="fvds";
 		TR_No = driver.findElement(By.name("recipt_no")).getAttribute("value");
 		WebElement ele = driver.findElement(By.xpath("//input[@name='agent_id']"));
 		ele.clear();
-		ele.sendKeys(AgentID);
+		ele.sendKeys(AgentID,Keys.ARROW_DOWN);
 
 		ap.addPaymentt("Agents", 1);
 		// step-06 Click On Payments Module

@@ -12,7 +12,7 @@ import com.hopestar.GenericUtility.ExcelUtility;
 public class Add_ClientPage {
 	String cname=null;
 	@FindBy(name="client_password")
-	private WebElement ClientPassTxt;
+	private WebElement clientPassTx;
 	
 	@FindBy(name="name")
 	private WebElement ClientName;
@@ -65,8 +65,8 @@ public class Add_ClientPage {
 	@FindBy(xpath="//input[@type='submit']")
 	private WebElement SubmitBtn;
 
-	public WebElement getClientPassTxt() {
-		return ClientPassTxt;
+	public WebElement getClientPassTx() {
+		return clientPassTx;
 	}
 
 	public WebElement getClientName() {
@@ -156,7 +156,7 @@ public class Add_ClientPage {
 					a2.add(el.readDataFromExcel(SheetName, i, colNum));	
 				}
 				cname=a2.get(1);
-		getClientPassTxt().sendKeys(a2.get(0));
+		getClientPassTx().sendKeys(a2.get(0));
 		getClientName().sendKeys(a2.get(1));
 		getFileUpload().sendKeys(a2.get(2));
 		getClientGender().sendKeys(a2.get(3));
