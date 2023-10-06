@@ -17,6 +17,7 @@ import com.Pom.pkg.HomePage;
 import com.Pom.pkg.LoginPage;
 
 public class BaseClass {
+
 	public DataBase_Utility du = new DataBase_Utility();
 	public WebDriver_Utility wu = new WebDriver_Utility();
 	public ExcelUtility eu = new ExcelUtility();

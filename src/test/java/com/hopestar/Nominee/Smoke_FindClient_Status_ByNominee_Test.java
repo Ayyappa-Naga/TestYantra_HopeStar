@@ -1,11 +1,13 @@
 package com.hopestar.Nominee;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.Pom.pkg.HomePage;
 import com.Pom.pkg.Nominee_Informationpage;
+import com.hopestar.Agents.System_Add_Payments_By_AgentsID_Test;
 import com.hopestar.GenericUtility.BaseClass;
 
 
@@ -14,6 +16,7 @@ public class Smoke_FindClient_Status_ByNominee_Test extends  BaseClass {
 
 	@Test(groups = "smoke")
 	public  void findClient_Status_ByNominee()throws Throwable {
+		ChromeDriver driver = new ChromeDriver();
 		HomePage hp = new HomePage(driver);
 		Nominee_Informationpage nip = new Nominee_Informationpage(driver);
 		//step-02 Click On Nominee Module
@@ -25,8 +28,7 @@ public class Smoke_FindClient_Status_ByNominee_Test extends  BaseClass {
 		Assert.assertTrue(TitlePage.equals("CLIENT'S STATUS"));
 
 			System.out.println("client's status page launched");
-		
-		
+			
 	}
 
 }

@@ -13,12 +13,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 
-
 public class BrokenLink_ITPan_Test {
 
 @Test
 		public static void method3() {
-			
 			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get("http://incometaxindia.gov.in/Pages/tax-services/apply-for-pan.aspx");
@@ -41,12 +39,8 @@ public class BrokenLink_ITPan_Test {
 				}
 				catch(Exception e){
 					linklist.add(eachLink+"--->"+Statuscode);
-				}
-				
-			}
-			
+				}	
+			}	
 			System.out.println(linklist);
-
 		}
-
-	}
+}

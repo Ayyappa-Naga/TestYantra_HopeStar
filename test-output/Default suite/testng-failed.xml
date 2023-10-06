@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.DemoTest">
+      <class name="com.TestNG.Practice.SpiceJet">
         <methods>
-          <include name="testm1"/>
-          <include name="openDBConnection"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- com.practice.DemoTest -->
+      </class> <!-- com.TestNG.Practice.SpiceJet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

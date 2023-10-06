@@ -314,6 +314,7 @@ public void scrollToEle(WebDriver driver,WebElement ele)
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", ele);
+	
 	}
 }
 	

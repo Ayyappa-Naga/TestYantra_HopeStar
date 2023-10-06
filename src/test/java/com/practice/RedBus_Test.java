@@ -21,7 +21,7 @@ public class RedBus_Test {
 		driver.manage().window().maximize();
 		driver.get("https://www.redbus.in");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//div[@class='labelCalendarContainer']")).click();
+		Object la = driver.findElement(By.xpath("//div[@class='labelCalendarContainer']"));
 		for(;;)
 			try {
 		driver.findElement(By.xpath("//div[text()='"+Month+"' and text()='"+Year+"']/ancestor::div[@class='DatePicker__MainBlock-sc-1kf43k8-1 hHKFiR']/descendant::span[text()='"+Date+"']")).click();
